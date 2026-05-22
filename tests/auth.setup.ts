@@ -6,7 +6,7 @@ import { DashboardPage } from './pages/DashboardPage';
 
 
 setup('login', async () => {
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage();
   
     const loginPage = new LoginPage(page);
