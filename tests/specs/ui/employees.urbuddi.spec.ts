@@ -6,7 +6,7 @@ import { getEmployeeData } from '../../utils/excelReader';
 test.describe.serial('retryBlock',() => {
 
   test.describe.configure({retries : 2});
- const staticData = getEmployeeData('C:/Users/Admin/Documents/employeeData.xlsx');
+ const staticData = getEmployeeData('tests/data/employeeData.xlsx');
   const data = generateEmployeeData(staticData);
   let employeeid : string;
   
